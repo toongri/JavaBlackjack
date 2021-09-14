@@ -1,3 +1,4 @@
+import CustomException.*;
 
 public class Manager {
 	Dealer dealer = new Dealer();
@@ -11,15 +12,20 @@ public class Manager {
 		gamer.draw(deck.getCrd());
 	}
 	
-	public String play() {
+	public String play() throws GamernumberException{
 		firstdraw();
 		
-		while(gamer.goorstop())
+		while(gamer.goorstop()) {
 			gamer.draw(deck.getCrd());
+			if (gamer.sum() > 21)
+				throw new GamernumberException();
+		}
 		
 		if(dealer.sum() < 17)
 			dealer.draw(deck.getCrd());
+		
 		int rstbol = decisionVictory(gamer.sum(), dealer.sum());
+		
 		return rstbol > 0 ? UtFnc.rstPrt[0] : rstbol < 0 ? UtFnc.rstPrt[1] : UtFnc.rstPrt[2];
 	}
 	
