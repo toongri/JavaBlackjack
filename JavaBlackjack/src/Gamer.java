@@ -13,7 +13,7 @@ public class Gamer extends User {
 				throw new InputMismatchException();
 		} catch(InputMismatchException e) {
 			UtFnc.sc.nextLine();
-			System.out.println("°ªÀ» Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. \n");
+			System.out.println("ê°’ì„ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”. \n");
 			return goorstop();
 		}
 	}

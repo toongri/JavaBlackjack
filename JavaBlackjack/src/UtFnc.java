@@ -6,9 +6,9 @@ public class UtFnc {
 		//{"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "K", "Q", "J"};
 	public static final String[] arrCSp =
 		{"Diamond", "Heart", "Spade", "Clover"};
-		//{´ÙÀÌ¾Æ, ÇÏÆ®, ½ºÆäÀÌµå, Å¬·Î¹ö}
+		//{ï¿½ï¿½ï¿½Ì¾ï¿½, ï¿½ï¿½Æ®, ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½, Å¬ï¿½Î¹ï¿½}
 	public static final String[] rstPrt =
-		{"°ÔÀÌ¸ÓÀÇ ½Â¸®ÀÔ´Ï´Ù!", "µô·¯ÀÇ ½Â¸®ÀÔ´Ï´Ù!", "¹«½ÂºÎÀÔ´Ï´Ù!"};
+		{"ê²Œì´ë¨¸ì˜ ìŠ¹ë¦¬ì…ë‹ˆë‹¤!", "ë”œëŸ¬ì˜ ìŠ¹ë¦¬ì…ë‹ˆë‹¤!", "ë¬´ìŠ¹ë¶€ì…ë‹ˆë‹¤!"};
 	public static Scanner sc = new Scanner(System.in);
 	
 	public static void menu() {

@@ -1,7 +1,15 @@
 
 public class Card {
+	
+	/*
+	 */
 	private int crdNum;
 	private String crdShp;
+	
+	public Card(int crdNum, String crdShp) {
+		this.crdNum = crdNum;
+		this.crdShp = crdShp;
+	}
 	
 	public int getCrdNum() {
 		return this.crdNum;
@@ -10,10 +18,6 @@ public class Card {
 		return this.crdShp;
 	}
 	
-	public Card(int crdNum, String crdShp) {
-		this.crdNum = crdNum;
-		this.crdShp = crdShp;
-	}
 	
 	public void setCrdShp(String crdShp) {
 		this.crdShp = crdShp;

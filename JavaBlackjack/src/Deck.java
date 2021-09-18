@@ -13,9 +13,9 @@ public class Deck {
 			for(String j : UtFnc.arrCSp)
 				deck.push(new Card(i, j));
 		
-		System.out.println("»õ µ¦ ÁØºñ¿Ï·á\n");
+		System.out.println("ìƒˆ ë± ì¤€ë¹„ì™„ë£Œ\n");
 		Collections.shuffle(deck);
-		System.out.println("¼ÅÇÃ ¿Ï·á\n");
+		System.out.println("ì…”í”Œ ì™„ë£Œ\n");
 	}
 	
 	@Override

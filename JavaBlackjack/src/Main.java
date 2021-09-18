@@ -10,9 +10,9 @@ public class Main {
 		try {
 			System.out.println(manager.play());
 		}catch(InputMismatchException e) {
-			System.out.println("ÀÔ·ÂÀ» Àß¸øÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println("ì…ë ¥ì„ ì˜ëª»í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		}catch(GamernumberException e) {
-			System.out.println("Ä«µå ÃÑÇÕÀÌ 21À» ³Ñ°å½À´Ï´Ù¤Ğ");
+			System.out.println("ì¹´ë“œ ì´í•©ì´ 21ì„ ë„˜ê²¼ìŠµë‹ˆë‹¤ã… ");
 			System.out.println(UtFnc.rstPrt[1]);
 		}
 	}

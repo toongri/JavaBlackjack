@@ -9,9 +9,9 @@ public class User {
 	
 	public void draw(Card crd){
 		String usr = this.getClass().getName();
-		System.out.println(usr + "´ÔÀÇ ÅÏÀÔ´Ï´Ù. "+crd.toString() + "¸¦ »ÌÀ¸¼Ì½À´Ï´Ù.");
+		System.out.println(usr + "ë‹˜ì˜ í„´ì…ë‹ˆë‹¤. "+crd.toString() + "ë¥¼ ë½‘ìœ¼ì…¨ìŠµë‹ˆë‹¤.");
 		this.arrCrd.add(crd);
-		System.out.println("ÇöÀç " + usr + "´ÔÀÇ Ä«µå ÃÑÇÕÀº "+ sum() + "ÀÔ´Ï´Ù.\n");
+		System.out.println("í˜„ì¬ " + usr + "ë‹˜ì˜ ì¹´ë“œ ì´í•©ì€ "+ sum() + "ì…ë‹ˆë‹¤.\n");
 	}
 	
 	public int sum() {
