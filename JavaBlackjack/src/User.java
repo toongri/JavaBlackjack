@@ -17,7 +17,7 @@ public class User {
 	public int sum() {
 		int sum = 0;
 		for(Card card : arrCrd)
-			sum+=card.getCrdNum();
+			sum+=card.getcardNumber();
 		
 		return sum;
 	}

@@ -9,22 +9,35 @@ public class Deck {
 	}
 	
 	public Deck() {
-		for (int i : UtFnc.arrCNb)
-			for(String j : UtFnc.arrCSp)
+		openCardPackage();
+		shuffleCardDeck();
+	}
+	
+	private void openCardPackage() {
+		for (int i : UtilityFunction.inventAllCardNumber) {
+			for(String j : UtilityFunction.inventAllCardShape) {
 				deck.push(new Card(i, j));
+			}
+		}
 		
 		System.out.println("새 덱 준비완료\n");
+	}
+	
+	private void shuffleCardDeck() {
 		Collections.shuffle(deck);
+		
 		System.out.println("셔플 완료\n");
 	}
 	
+	/*
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
+		StringBuilder cardNumberAndShapeOfDeck = new StringBuilder();
 		
 		while(!deck.empty())
-			sb.append(deck.pop().toString()+"\n");
+			cardNumberAndShapeOfDeck.append(deck.pop().toString()+"\n");
 		
-		return sb.toString();
+		return cardNumberAndShapeOfDeck.toString();
 	}
+	*/
 }

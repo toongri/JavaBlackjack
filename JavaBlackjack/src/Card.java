@@ -3,32 +3,32 @@ public class Card {
 	
 	/*
 	 */
-	private int crdNum;
-	private String crdShp;
+	private int cardNumber;
+	private String cardShape;
 	
-	public Card(int crdNum, String crdShp) {
-		this.crdNum = crdNum;
-		this.crdShp = crdShp;
+	public Card(int cardNumber, String cardShape) {
+		this.cardNumber = cardNumber;
+		this.cardShape = cardShape;
 	}
 	
-	public int getCrdNum() {
-		return this.crdNum;
+	public int getcardNumber() {
+		return this.cardNumber;
 	}
-	public String getCrdShp() {
-		return this.crdShp;
-	}
-	
-	
-	public void setCrdShp(String crdShp) {
-		this.crdShp = crdShp;
+	public String getcardShape() {
+		return this.cardShape;
 	}
 	
-	public void setCrdNum(int crdNum) {
-		this.crdNum = crdNum;
+	
+	public void setcardShape(String cardShape) {
+		this.cardShape = cardShape;
+	}
+	
+	public void setcardNumber(int cardNumber) {
+		this.cardNumber = cardNumber;
 	}
 	
 	@Override
 	public String toString() {
-		return "number : " + this.crdNum + ", shape : " + this.crdShp;
+		return "number : " + this.cardNumber + ", shape : " + this.cardShape;
 	}
 }
